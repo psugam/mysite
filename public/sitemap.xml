@@ -2,64 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mysite/authors/</loc>
+    <loc>https://psugam.github.io/mysite/authors/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/tags/blue/</loc>
+    <loc>https://psugam.github.io/mysite/tags/blue/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/posts/multiple-column/</loc>
+    <loc>https://psugam.github.io/mysite/posts/multiple-column/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/tags/red/</loc>
+    <loc>https://psugam.github.io/mysite/tags/red/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/authors/sugam/</loc>
+    <loc>https://psugam.github.io/mysite/authors/sugam/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/tags/sugam/</loc>
+    <loc>https://psugam.github.io/mysite/tags/sugam/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/tags/</loc>
+    <loc>https://psugam.github.io/mysite/tags/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/tags/white/</loc>
+    <loc>https://psugam.github.io/mysite/tags/white/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/about/</loc>
+    <loc>https://psugam.github.io/mysite/about/</loc>
     <lastmod>2025-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/authors/alice/</loc>
+    <loc>https://psugam.github.io/mysite/authors/alice/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/authors/bob/</loc>
+    <loc>https://psugam.github.io/mysite/authors/bob/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/tags/green/</loc>
+    <loc>https://psugam.github.io/mysite/tags/green/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/posts/hello-wassup/</loc>
+    <loc>https://psugam.github.io/mysite/posts/hello-wassup/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/posts/newpost/</loc>
+    <loc>https://psugam.github.io/mysite/posts/newpost/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/posts/post-3/</loc>
+    <loc>https://psugam.github.io/mysite/posts/post-3/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/authors/carol/</loc>
+    <loc>https://psugam.github.io/mysite/authors/carol/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/posts/post-2/</loc>
+    <loc>https://psugam.github.io/mysite/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/posts/post-1/</loc>
+    <loc>https://psugam.github.io/mysite/posts/post-1/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/posts/</loc>
+    <loc>https://psugam.github.io/mysite/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/</loc>
+    <loc>https://psugam.github.io/mysite/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url>
 </urlset>
