@@ -1,0 +1,20 @@
+baseURL = 'https://psugam.github.io/mysite/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme='sugo-theme-check'
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 5
+    ordered = false
+    startLevel = 2
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+[taxonomies]
+  tag = "tags"
+  author = "authors"

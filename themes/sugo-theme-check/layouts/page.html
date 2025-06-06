@@ -1,0 +1,81 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ $authors := .Params.authors }}
+  {{ if $authors }}
+    <div>
+      <span>Authors:</span>
+      <ul style="display:inline;list-style:none;padding:0;margin:0;">
+        {{- $terms := .GetTerms "authors" -}}
+        {{- range $i, $term := $terms }}
+          <li style="display:inline;">
+            {{ if $i }}, {{ end }}<a class="author-badge" href="{{ $term.RelPermalink }}">{{ $term.LinkTitle }}</a>
+          </li>
+        {{- end }}
+      </ul>
+    </div>
+  {{ end }}
+
+  <div class="post-meta">
+    <span>
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format ":date_long" }}
+      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    </span>
+    <span>{{ .ReadingTime }} min read</span>
+    <span>{{ .WordCount }} words</span>
+  </div>
+
+  {{ $tags := .Params.tags }}
+  {{ if $tags }}
+    <div style="margin: 0.5rem 0 0 0; text-align: left;">
+      <span>Tags:</span>
+      <span>
+        {{- $terms := .GetTerms "tags" -}}
+        {{- range $i, $term := $terms }}
+          {{ if $i }}, {{ end }}<a class="tag-badge" href="{{ $term.RelPermalink }}">{{ $term.LinkTitle }}</a>
+        {{- end }}
+      </span>
+    </div>
+  {{ end }}
+  {{ if and (.Params.toc) (.TableOfContents) }}
+    <div class="toc" id="toc-container">
+      <h2 id="toc-title" style="font: bold;">CONTENTS</h2>
+      {{ .TableOfContents }}
+    </div>
+    <script>
+      // Collapsible TOC logic
+      (function() {
+        var toc = document.getElementById('toc-container');
+        var title = document.getElementById('toc-title');
+        if (toc && title) {
+          title.addEventListener('click', function() {
+            toc.classList.toggle('collapsed');
+          });
+        }
+      })();
+    </script>
+  {{ end }}
+
+  <div id="post-content-wrapper">
+    <div id="post-main-content">
+      {{ .Content }}
+    </div>
+  </div>
+
+  {{ if eq .Section "posts" }}
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2.5rem; border-top: 1px solid #bbb; padding-top: 1.5rem;">
+      <div style="flex:1; text-align:left;">
+        {{ with .PrevInSection }}
+          <a href="{{ .RelPermalink }}">← Previous: {{ .Title }}</a>
+        {{ end }}
+      </div>
+      <div style="flex:1; text-align:right;">
+        {{ with .NextInSection }}
+          <a href="{{ .RelPermalink }}">Next: {{ .Title }} →</a>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+{{ end }}
+
