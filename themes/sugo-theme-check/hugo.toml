@@ -51,3 +51,6 @@ title = 'My New Hugo Site'
   section = ['html', 'rss']
   taxonomy = ['html']
   term = ['html']
+
+[params]
+  postsPerPage = 5

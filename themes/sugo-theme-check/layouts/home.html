@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{ .Content }}
-  {{ $paginator := .Paginate (where site.RegularPages "Section" "posts") 5 }}
+  {{ $postsPerPage := or (site.Params.postsPerPage) 5 }}
+  {{ $paginator := .Paginate (where site.RegularPages "Section" "posts") $postsPerPage }}
   <div>
     {{ range $paginator.Pages }}
       <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem;">
