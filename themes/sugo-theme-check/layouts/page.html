@@ -9,7 +9,7 @@
         {{- $terms := .GetTerms "authors" -}}
         {{- range $i, $term := $terms }}
           <li style="display:inline;">
-            {{ if $i }}, {{ end }}<a class="author-badge" href="{{ $term.RelPermalink }}">{{ $term.LinkTitle }}</a>
+            {{ if $i }} • {{ end }}<a class="author-badge" href="{{ $term.RelPermalink }}">{{ $term.LinkTitle }}</a>
           </li>
         {{- end }}
       </ul>
@@ -21,8 +21,8 @@
       {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $dateHuman := .Date | time.Format ":date_long" }}
       <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-    </span>
-    <span>{{ .ReadingTime }} min read</span>
+    </span> • 
+    <span>{{ .ReadingTime }} min read</span> • 
     <span>{{ .WordCount }} words</span>
   </div>
 
@@ -33,7 +33,7 @@
       <span>
         {{- $terms := .GetTerms "tags" -}}
         {{- range $i, $term := $terms }}
-          {{ if $i }}, {{ end }}<a class="tag-badge" href="{{ $term.RelPermalink }}">{{ $term.LinkTitle }}</a>
+          {{ if $i }} • {{ end }}<a class="tag-badge" href="{{ $term.RelPermalink }}">{{ $term.LinkTitle }}</a>
         {{- end }}
       </span>
     </div>
