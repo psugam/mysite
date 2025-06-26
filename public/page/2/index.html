@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
+<script src="/mysite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mysite/livereload" data-no-instant defer></script><style>
+:root {
+  --navbarlinks-light: #0008ff;
+  --postheader-light: #0008ff;
+  --inpostlinks-light: #0074d9;
+  --tags-page-light: #ff0000;
+  --site-title-light: #000;
+  --background-light: #d1bebc;
+  --rss-light: #0008ff;
+}
+body.darkmode {
+  --navbarlinks-dark: #8ecae6;
+  --postheader-dark: #e0e0e0;
+  --inpostlinks-dark: #e0e0e0;
+  --tags-page-dark: #f3e9c7;
+  --site-title-dark: #e0e0e0;
+  --background-dark: #302c2f;
+  --rss-dark: white;
+
+}
+</style>
+
 <head>
-	<meta name="generator" content="Hugo 0.147.6"><script src="/mysite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mysite/livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.147.6">
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>My New Hugo Site</title>
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 
     <link rel="stylesheet" href="/mysite/css/main.css">
 
@@ -57,6 +82,18 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
   <div>
     
       <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem;">
+        <h3 style="margin: 0;"><a href="/mysite/posts/newpost/">New Post</a></h3>
+        <p style="margin: 0; color: inherit; font-size: 1rem;"><time datetime="2023-03-15T11:00:00-07:00">March 15, 2023</time></p>
+      </div>
+      
+    
+      <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem;">
+        <h3 style="margin: 0;"><a href="/mysite/posts/post-3/">Post 3</a></h3>
+        <p style="margin: 0; color: inherit; font-size: 1rem;"><time datetime="2023-03-15T11:00:00-07:00">March 15, 2023</time></p>
+      </div>
+      
+    
+      <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem;">
         <h3 style="margin: 0;"><a href="/mysite/posts/post-2/">Post 2</a></h3>
         <p style="margin: 0; color: inherit; font-size: 1rem;"><time datetime="2023-02-15T10:00:00-07:00">February 15, 2023</time></p>
       </div>
@@ -71,7 +108,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
   </div>
   <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
     
-      <a href="/mysite/" style="font-weight: bold;">&larr; Previous</a>
+      <a href="/mysite/" style="font-weight: bold;" class="prev-page">&larr; Previous</a>
     
     
   </div>
@@ -80,7 +117,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
   <footer>
     <p>Copyright 2025. All rights reserved.</p>
 <p style="color: inherit;">
-  <a href="/mysite/index.xml"  target="_blank">RSS Feed</a>
+  <a href="/mysite/index.xml"  target="_blank" class="rss-feed">RSS Feed</a>
 </p>
 
   </footer>

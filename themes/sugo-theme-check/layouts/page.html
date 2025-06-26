@@ -1,4 +1,16 @@
 {{ define "main" }}
+{{ with .Params.cover }}
+  {{ $cover := . }}
+  {{ with $.Resources.GetMatch $cover }}
+    <div class="post-cover">
+      <img src="{{ .RelPermalink }}" alt="Cover image" />
+    </div>
+  {{ else }}
+    <div class="post-cover">
+      <img src="{{ $cover | relURL }}" alt="Cover image" />
+    </div>
+  {{ end }}
+{{ end }}
   <h1>{{ .Title }}</h1>
 
   {{ $authors := .Params.authors }}

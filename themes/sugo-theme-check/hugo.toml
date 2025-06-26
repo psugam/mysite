@@ -54,3 +54,19 @@ title = 'My New Hugo Site'
 
 [params]
   postsPerPage = 5
+  navbarlinks_light_mode = "#0008ff"      # brown (current)
+  navbarlinks_dark_mode = "#8ecae6"       # blue (current)
+  postheader_light_mode = "#0008ff"       # dark gray (current)
+  postheader_dark_mode = "#e0e0e0"        # light gray (current)
+  inpostlinks_light_mode = "#0074d9"      # blue (current for tags/authors)
+  inpostlinks_dark_mode = "#e0e0e0"       # light gray (current)
+  tags_page_light_mode = "#ff0000"        # dark (current)
+  tags_page_dark_mode = "#f3e9c7"         # light (current)
+  site_title_light_mode = "#000"       # dark (current)
+  site_title_dark_mode = "#e0e0e0"        # light (current)
+  background_light_mode = "#d1bebc"       # d3cdc7
+  background_dark_mode = "#302c2f"        # 23272e
+  rss_light_mode="#0008ff"
+  rss_dark_mode="white"
+
+  # favicon ="https://upload.wikimedia.org/wikipedia/commons/5/55/Fairytale_up_red.png"

@@ -13,12 +13,12 @@
   </div>
   <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
     {{ if $paginator.HasPrev }}
-      <a href="{{ $paginator.Prev.URL }}" style="font-weight: bold;">&larr; Previous</a>
+      <a href="{{ $paginator.Prev.URL }}" style="font-weight: bold;" class="prev-page">&larr; Previous</a>
     {{ else }}
       <span></span>
     {{ end }}
     {{ if $paginator.HasNext }}
-      <a href="{{ $paginator.Next.URL }}" style="font-weight: bold;">Next &rarr;</a>
+      <a href="{{ $paginator.Next.URL }}" style="font-weight: bold;" class="next-page">Next &rarr;</a>
     {{ end }}
   </div>
 {{ end }}

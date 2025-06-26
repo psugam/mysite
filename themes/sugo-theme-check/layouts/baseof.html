@@ -1,5 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<style>
+:root {
+  --navbarlinks-light: {{ with .Site.Params.navbarlinks_light_mode }}{{ . }}{{ else }}#a52a2a{{ end }};
+  --postheader-light: {{ with .Site.Params.postheader_light_mode }}{{ . }}{{ else }}#222222{{ end }};
+  --inpostlinks-light: {{ with .Site.Params.inpostlinks_light_mode }}{{ . }}{{ else }}#0074d9{{ end }};
+  --tags-page-light: {{ with .Site.Params.tags_page_light_mode }}{{ . }}{{ else }}#232323{{ end }};
+  --site-title-light: {{ with .Site.Params.site_title_light_mode }}{{ . }}{{ else }}#222222{{ end }};
+  --background-light: {{ with .Site.Params.background_light_mode }}{{ . }}{{ else }}#d3cdc7{{ end }};
+  --rss-light: {{ with .Site.Params.rss_light_mode }}{{ . }}{{ else }}#d3cdc7{{ end }};
+}
+body.darkmode {
+  --navbarlinks-dark: {{ with .Site.Params.navbarlinks_dark_mode }}{{ . }}{{ else }}#8ecae6{{ end }};
+  --postheader-dark: {{ with .Site.Params.postheader_dark_mode }}{{ . }}{{ else }}#e0e0e0{{ end }};
+  --inpostlinks-dark: {{ with .Site.Params.inpostlinks_dark_mode }}{{ . }}{{ else }}#e0e0e0{{ end }};
+  --tags-page-dark: {{ with .Site.Params.tags_page_dark_mode }}{{ . }}{{ else }}#f3e9c7{{ end }};
+  --site-title-dark: {{ with .Site.Params.site_title_dark_mode }}{{ . }}{{ else }}#e0e0e0{{ end }};
+  --background-dark: {{ with .Site.Params.background_dark_mode }}{{ . }}{{ else }}#23272e{{ end }};
+  --rss-dark: {{ with .Site.Params.rss_dark_mode }}{{ . }}{{ else }}#d3cdc7{{ end }};
+
+}
+</style>
+
 <head>
   {{ partial "head.html" . }}
 </head>

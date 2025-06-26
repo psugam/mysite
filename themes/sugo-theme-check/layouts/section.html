@@ -22,7 +22,7 @@
         {{ $words := (split (plainify .Content) " ") }}
         {{ $first100 := (delimit (first 100 $words) " ") }}
         {{ $first100 }}{{ if gt (len $words) 100 }}...{{ end }}
-        <a href="{{ .RelPermalink }}">Read more</a>
+        <a href="{{ .RelPermalink }}" class="read-more">Read more</a>
       </p>
     </div>
 

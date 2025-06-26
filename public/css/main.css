@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(211, 205, 199);
+  background-color: var(--background-light,rgb(211, 205, 199));
   color: #222;
   font-family: Georgia, 'Times New Roman', Times, serif; /* This Georgia font looks good for now. Trying to find a more mediaeval looking font.*/
   line-height: 1.5;
@@ -33,7 +33,7 @@ footer {
 }
 
 a {
-  color: #00e;
+  color: red;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ nav ul li {
 }
 @media (min-width: 601px) {
   nav ul li:not(:last-child)::after {
-    content: ' · ';
+    content: ' • ';
     color: inherit;
     margin: 0;
     font-size: 1.1em;
@@ -106,12 +106,12 @@ h1 {
 }
 
 body.darkmode {
-  background: #23272e;
+  background: var(--background-dark,#23272e);
   color: #e0e0e0;
 }
 body.darkmode header,
 body.darkmode footer {
-  background: #23272e;
+  background: inherit;
   color: #e0e0e0;
 }
 body.darkmode a {
@@ -548,9 +548,48 @@ body.darkmode .toc *{
 
 
 
+/* rss feed link color */
+
+.rss-feed{
+  color: var(--rss-light, "black");
+}
+body.darkmode .rss-feed {
+  color: var(--rss-dark, "white");
+}
 
 
 
+/* read more link color */
+.read-more{
+  color:rgb(16, 206, 16)
+}
 
+body.darkmode .read-more {
+  color: rgb(5, 113, 5);
+}
 
+/* previous and next pages */
 
+.prev-page, .next-page {
+  color: hwb(30 35% 64%);
+}
+
+body.darkmode .prev-page, body.darkmode .next-page {
+  color: #ffb347;
+}
+
+/* cover image */
+.post-cover img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .post-cover img {
+    max-height: 300px;
+    object-fit: contain; /* Adjusted for smaller screens */
+  }
+}

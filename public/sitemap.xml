@@ -2,16 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/mysite/authors/alice/</loc>
+    <lastmod>2025-06-15T11:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/mysite/authors/</loc>
-    <lastmod>2025-06-04T18:07:33+05:45</lastmod>
+    <lastmod>2025-06-15T11:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/mysite/tags/blue/</loc>
-    <lastmod>2025-06-04T18:07:33+05:45</lastmod>
+    <lastmod>2025-06-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/posts/multiple-column/</loc>
-    <lastmod>2025-06-04T18:07:33+05:45</lastmod>
+    <loc>http://localhost:1313/mysite/authors/bob/</loc>
+    <lastmod>2025-06-15T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/mysite/tags/green/</loc>
+    <lastmod>2025-06-15T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/mysite/posts/post-sugam/</loc>
+    <lastmod>2025-06-15T11:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/mysite/tags/red/</loc>
+    <lastmod>2025-06-15T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/mysite/tags/</loc>
+    <lastmod>2025-06-15T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/mysite/posts/multiple-column/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
     <loc>http://localhost:1313/mysite/authors/sugam/</loc>
@@ -20,23 +35,20 @@
     <loc>http://localhost:1313/mysite/tags/sugam/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/tags/</loc>
-    <lastmod>2025-06-04T18:07:33+05:45</lastmod>
-  </url><url>
     <loc>http://localhost:1313/mysite/tags/white/</loc>
     <lastmod>2025-06-04T18:07:33+05:45</lastmod>
   </url><url>
     <loc>http://localhost:1313/mysite/about/</loc>
     <lastmod>2025-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/authors/alice/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <loc>http://localhost:1313/mysite/authors/carol/</loc>
+    <lastmod>2025-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/authors/bob/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <loc>http://localhost:1313/mysite/tags/sanskrit/</loc>
+    <lastmod>2025-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mysite/tags/green/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <loc>http://localhost:1313/mysite/posts/%E0%A4%8B%E0%A4%A4%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF%E0%A4%83/</loc>
+    <lastmod>2025-02-15T10:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/mysite/posts/hello-wassup/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
@@ -46,9 +58,6 @@
   </url><url>
     <loc>http://localhost:1313/mysite/posts/post-3/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/mysite/authors/carol/</loc>
-    <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/mysite/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
